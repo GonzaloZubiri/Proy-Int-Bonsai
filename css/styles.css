@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 
-/*NAV-BAR*/
+/*-------- NAV BAR --------*/
 
 * {
   margin: 0;
@@ -132,7 +132,8 @@ nav .wrapper {
 }
 
 .mega-content .row h2 {
-  color: #f2f2f2;
+  /* color: #f2f2f2; */
+  color: #046812;
   font-size: 20px;
   font-weight: 500;
 }
@@ -248,7 +249,8 @@ nav .wrapper {
   }
 
   #showDrop:checked ~ .drop-menu,
-  #showMega:checked ~ .mega-box {
+  #showMega:checked ~ .mega-box,
+  #showMega2:checked ~ .mega-box {
     max-height: 100%;
   }
 
@@ -322,7 +324,6 @@ nav .wrapper {
 
   .mega-content .row h2 {
     font-size: 19px;
-    
   }
 }
 
@@ -331,7 +332,10 @@ nav input {
 }
 
 
-/*HEADER*/
+
+
+/*-------- HEADER --------*/
+
 .text-title h2 {
   text-align: center;
   color: #fff;
@@ -368,7 +372,10 @@ span {
 }
 
 
-/*SECCIONES*/
+
+
+
+/*-------- SECCIONES --------*/
 
 .section-1 {
   /* max-width: 1200px; */
@@ -453,7 +460,7 @@ blockquote {
 
 
 
-/*SIGNUP & LOGIN*/
+/*-------- SIGNUP & LOGIN --------*/
 
 * {
   margin: 0;
