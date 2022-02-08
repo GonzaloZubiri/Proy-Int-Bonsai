@@ -57,10 +57,14 @@ nav .wrapper {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-  padding: 9px 15px;
+  padding: 9px 10px;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+
+/* .nav-links li .latest { 
+  color: #046812;
+} */
 
 .nav-links li a:hover {
   /* background: #3A3B3C; */
@@ -390,14 +394,32 @@ span {
   font-family: "Poppins" , sans-serif;
   font-weight: 700;
   font-size: 35px;
+  margin-top: 50px;
+}
+
+.section-1 h3 {
+  font-size: 25px;
+}
+
+.section-1 ul {
+  margin-left: 25px;
+}
+
+.section-1 b {
+  font-size: 18px;
 }
 
 .section-title {
   text-align: center;
 }
 
-.definition p{
+.definition p,
+.intro p,
+.origen p,
+.historia p,
+.clasificacion p {
   text-align: justify;
+  font-size: 18px;
 }
 
 /* .imagen-def1,
@@ -413,7 +435,9 @@ blockquote {
   color: #525252;
 }
 
-.imagen-def1 {
+.imagen-def1,
+.imagen-intro,
+.imagen-origen {
   display: none;
 }
 
@@ -424,7 +448,11 @@ blockquote {
     flex-direction: row;
     justify-content: space-between;
   }
-  .definition {
+  .definition,
+  .intro,
+  .origen,
+  .historia,
+  .clasificacion {
     /* display: flex;
     flex-direction: row;
     justify-content: space-between; */
@@ -435,19 +463,28 @@ blockquote {
     margin: auto 0;
   }
 
-  .definition p {
-    padding: 20px 0 ;
+  .definition p,
+  .intro p,
+  .origen p,
+  .historia p,
+  .clasificacion p {
+    padding: 20px 0;
   }
 
-  .imagen-def1 {
+  .imagen-def1,
+  .imagen-intro,
+  .imagen-origen {
     visibility: visible;
     display: inline-block;
     width: 35%;
     /* padding: 0px 50px; */
     /* margin-top: 20px; */
     margin: auto 0;
+    padding: 50px 50px 50px 0;
   }
-  .imagen-def1 img {
+  .imagen-def1 img,
+  .imagen-intro img,
+  .imagen-origen img {
     width: 100%;
     
   }
