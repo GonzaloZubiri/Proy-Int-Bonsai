@@ -426,7 +426,27 @@ span {
 .card-27,
 .card-28,
 .card-29,
-.card-30 {
+.card-30,
+.card-31,
+.card-32,
+.card-33,
+.card-34,
+.card-35,
+.card-36,
+.card-37,
+.card-38,
+.card-39,
+.card-40,
+.card-41,
+.card-42,
+.card-43,
+.card-44,
+.card-45,
+.card-46,
+.card-47,
+.card-48,
+.card-49,
+.card-50 {
   width: 250px;
   height: 250px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
@@ -468,7 +488,27 @@ span {
 .card-27 img,
 .card-28 img,
 .card-29 img,
-.card-30 img {
+.card-30 img,
+.card-31 img,
+.card-32 img,
+.card-33 img,
+.card-34 img,
+.card-35 img,
+.card-36 img,
+.card-37 img,
+.card-38 img,
+.card-39 img,
+.card-40 img,
+.card-41 img,
+.card-42 img,
+.card-43 img,
+.card-44 img,
+.card-45 img,
+.card-46 img,
+.card-47 img,
+.card-48 img,
+.card-49 img,
+.card-50 img {
   width: 250px;
   height: 250px;
   border-radius: 20px;
@@ -507,7 +547,27 @@ span {
 .card-27:hover img,
 .card-28:hover img,
 .card-29:hover img,
-.card-30:hover img {
+.card-30:hover img,
+.card-31:hover img,
+.card-32:hover img,
+.card-33:hover img,
+.card-34:hover img,
+.card-35:hover img,
+.card-36:hover img,
+.card-37:hover img,
+.card-38:hover img,
+.card-39:hover img,
+.card-40:hover img,
+.card-41:hover img,
+.card-42:hover img,
+.card-43:hover img,
+.card-44:hover img,
+.card-45:hover img,
+.card-46:hover img,
+.card-47:hover img,
+.card-48:hover img,
+.card-49:hover img,
+.card-50:hover img {
   margin-top: -40px;
 }
 
@@ -540,7 +600,27 @@ span {
 .card-27:hover,
 .card-28:hover,
 .card-29:hover,
-.card-30:hover {
+.card-30:hover,
+.card-31:hover,
+.card-32:hover,
+.card-33:hover,
+.card-34:hover,
+.card-35:hover,
+.card-36:hover,
+.card-37:hover,
+.card-38:hover,
+.card-39:hover,
+.card-40:hover,
+.card-41:hover,
+.card-42:hover,
+.card-43:hover,
+.card-44:hover,
+.card-45:hover,
+.card-46:hover,
+.card-47:hover,
+.card-48:hover,
+.card-49:hover,
+.card-50:hover {
   width: 250px;
 }
 
@@ -874,6 +954,225 @@ span {
   font-weight: 700;
 }
 
+.card-31::before {
+  content: 'Acer Monspessulanum';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-32::before {
+  content: 'Abeto Plateado';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-33::before {
+  content: 'Acacia';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-34::before {
+  content: 'Arce Campestre';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-35::before {
+  content: 'Albizia Julibrissin';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-36::before {
+  content: 'Alnus Cordata';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-37::before {
+  content: 'Arbutus Unedo';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-38::before {
+  content: 'Betula Alba';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-39::before {
+  content: 'Azalea spp';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-40::before {
+  content: 'Bambusa Ventricosa';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-41::before {
+  content: 'Berberis spp';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-42::before {
+  content: 'Cedrus spp';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-43::before {
+  content: 'Buxus Harlandii';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-44::before {
+  content: 'Carpinus Betulus';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-45::before {
+  content: 'Cedrus Libani';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-46::before {
+  content: 'Cyca Revoluta';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-47::before {
+  content: 'Diospyros Kaki';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-48::before {
+  content: 'Celtis Australis';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-49::before {
+  content: 'Citrus spp';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-50::before {
+  content: 'Crataegus Cuneata';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
 
 
 
