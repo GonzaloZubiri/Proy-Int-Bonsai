@@ -512,7 +512,10 @@ blockquote {
   font-size: 1.4rem;
   text-align: center;
   font-style: italic;
-  color: #525252;
+  color: #848383;
+border: 1px solid #f2f0f0;
+border-radius: 20px;
+background: #f2f0f0;
 }
 
 .imagen-def1,
@@ -566,7 +569,7 @@ blockquote {
   .imagen-intro img,
   .imagen-origen img {
     width: 100%;
-    
+    border-radius: 10px;
   }
 }
 

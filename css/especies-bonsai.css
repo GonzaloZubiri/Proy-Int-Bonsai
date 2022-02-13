@@ -493,7 +493,7 @@ span {
     .imagen-intro img,
     .imagen-origen img {
       width: 100%;
-      
+      border-radius: 10px;
     }
   }
   
