@@ -1,4 +1,6 @@
 
+
+
 /*-------- NAV BAR --------*/
 
 * {
@@ -58,15 +60,10 @@
     transition: all 0.3s ease;
   }
   
-  /* .nav-links li .latest { 
-    color: #046812;
-  } */
   
   .nav-links li a:hover {
-    /* background: #3A3B3C; */
     border: 1px solid #046812;
     color: #046812;
-    /* font-size: 20px; */
     margin: 0;
   }
   
@@ -132,7 +129,6 @@
   }
   
   .mega-content .row h2 {
-    /* color: #f2f2f2; */
     color: #046812;
     font-size: 20px;
     font-weight: 500;
@@ -156,7 +152,6 @@
   }
   
   .row .mega-links li a:hover {
-    /* color: #f2f2f2; */
     color: #046812;
   }
   
@@ -367,7 +362,6 @@
     padding: 40px 30px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     perspective: 2700px;
-    /* border-radius: 10px; */
   }
   
   .container .cover {
@@ -407,9 +401,6 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    /* background: #7d2ae8; */
-    /* opacity: 0.5; */
-    /* z-index: 12; */
   }
   
   .container .cover::after {
@@ -424,12 +415,10 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    /* z-index: 10; */
   }
   
   .container .cover .text {
     position: absolute;
-    /* z-index: 130; */
     height: 100%;
     width: 100%;
     display: flex;

@@ -3,6 +3,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 
+
+
 /*-------- NAV BAR --------*/
 
 * {
@@ -62,15 +64,9 @@ nav .wrapper {
   transition: all 0.3s ease;
 }
 
-/* .nav-links li .latest { 
-  color: #046812;
-} */
-
 .nav-links li a:hover {
-  /* background: #3A3B3C; */
   border: 1px solid #046812;
   color: #046812;
-  /* font-size: 20px; */
   margin: 0;
 }
 
@@ -136,7 +132,6 @@ nav .wrapper {
 }
 
 .mega-content .row h2 {
-  /* color: #f2f2f2; */
   color: #046812;
   font-size: 20px;
   font-weight: 500;
@@ -160,7 +155,6 @@ nav .wrapper {
 }
 
 .row .mega-links li a:hover {
-  /* color: #f2f2f2; */
   color: #046812;
 }
 
@@ -384,11 +378,8 @@ span {
 /*-------- SECCIONES --------*/
 
 .intro {
-    /* max-width: 1200px; */
     width: 100%;
     margin: 0 auto;
-    /* display: flex;
-    flex-flow: column; */
     padding: 10px;
   }
   
@@ -428,14 +419,6 @@ span {
     text-align: justify;
     font-size: 18px;
   }
-
-  
-  
-  /* .imagen-def1,
-  .imagen-def2,
-  .imagen-def3 {
-    text-align: center;
-  } */
   
   blockquote {
     font-size: 1.4rem;
@@ -457,13 +440,7 @@ span {
     .origen,
     .historia,
     .clasificacion {
-      /* display: flex;
-      flex-direction: row;
-      justify-content: space-between; */
       width: 75%;
-      /* align-items: center;
-      padding: 0px 50px;
-      margin-top: 20px; */
       margin: 50px auto 10px auto;
     }
   
@@ -476,7 +453,6 @@ span {
     }
 
     .imagen-intro p {
-        /* padding-left: 35px; */
         font-family: cursive;
         padding-bottom: 10px;
         width: 80%;
@@ -488,11 +464,6 @@ span {
     .imagen-origen {
       visibility: visible;
       display: inline-block;
-      /* width: 100%; */
-      /* padding: 0px 50px; */
-      /* margin-top: 20px; */
-      /* margin: auto 25px;
-      padding: 50px 50px 50px 0; */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -507,9 +478,7 @@ span {
       border-radius: 10px;
     }
 
-  
   }
-  
   
   .after::after {
     content: "";
