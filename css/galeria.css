@@ -1,0 +1,946 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/*-------- NAV BAR --------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+
+nav {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background: #13171b;
+}
+
+nav .wrapper {
+  position: relative;
+  max-width: 1300px;
+  padding: 0px 25px;
+  height: 70px;
+  line-height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .logo {
+  width: 60px;
+  margin-left: 20px;
+  margin-top: 26px;
+}
+
+.wrapper .logo a {
+  color: #f2f2f2;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.wrapper .nav-links {
+  display: inline-flex;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* .nav-links li .latest { 
+  color: #046812;
+} */
+
+.nav-links li a:hover {
+  /* background: #3A3B3C; */
+  border: 1px solid #046812;
+  color: #046812;
+  /* font-size: 20px; */
+  margin: 0;
+}
+
+.nav-links .mobile-item {
+  display: none;
+}
+
+.nav-links .drop-menu {
+  position: absolute;
+  background: #242526;
+  width: 180px;
+  line-height: 45px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+.nav-links li:hover .drop-menu,
+.nav-links li:hover .mega-box {
+  transition: all 0.3s ease;
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.drop-menu li a {
+  width: 100%;
+  display: block;
+  padding: 0 0 0 15px;
+  font-weight: 400;
+  border-radius: 0px;
+}
+
+.mega-box {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0 30px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mega-box .mega-content {
+  background: #242526;
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+.mega-box .mega-content .row {
+  width: calc(25% - 30px);
+  line-height: 45px;
+}
+
+.mega-content .row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mega-content .row h2 {
+  /* color: #f2f2f2; */
+  color: #046812;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mega-content .row .mega-links {
+  margin-left: -40px;
+  border-left: 1px solid rgba(255,255,255,0.09);
+}
+
+.row .mega-links li {
+  padding: 0 20px;
+}
+
+.row .mega-links li a {
+  padding: 0px;
+  padding: 0 20px;
+  color: #d9d9d9;
+  font-size: 17px;
+  display: block;
+}
+
+.row .mega-links li a:hover {
+  /* color: #f2f2f2; */
+  color: #046812;
+}
+
+.wrapper .btn {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.wrapper .btn.close-btn {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .btn {
+    display: block;
+  }
+
+  .wrapper .nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    top: 0;
+    left: -100%;
+    background: #13171b;
+    display: block;
+    padding: 50px 10px;
+    line-height: 50px;
+    overflow-y: auto;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+    transition: all 0.3s ease;
+  }
+  
+
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #242526;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3A3B3C;
+  }
+
+  #menu-btn:checked ~ .nav-links {
+    left: 0%;
+  }
+
+  #menu-btn:checked ~ .btn.menu-btn {
+    display: none;
+  }
+
+  #close-btn:checked ~ .btn.menu-btn {
+    display: block;
+  }
+
+  .nav-links li {
+    margin: 15px 10px;
+  }
+
+  .nav-links li a {
+    padding: 0 20px;
+    display: block;
+    font-size: 20px;
+  }
+
+  .nav-links .drop-menu {
+    position: static;
+    opacity: 1;
+    top: 65px;
+    visibility: visible;
+    padding-left: 20px;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links .mobile-item:hover {
+    border: 1px solid #046812;
+    color: #046812;
+  }
+
+  #showDrop:checked ~ .drop-menu,
+  #showMega:checked ~ .mega-box,
+  #showMega2:checked ~ .mega-box {
+    max-height: 100%;
+  }
+
+  .nav-links .desktop-item {
+    display: none;
+  }
+
+  .nav-links .mobile-item {
+    display: block;
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links .mobile-item:hover {
+    background: #13171b;
+  }
+
+  .drop-menu li {
+    margin: 0;
+  }
+
+  .drop-menu li a {
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  .mega-box {
+    position: static;
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .mega-box .mega-content {
+    box-shadow: none;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+  }
+
+  .mega-box .mega-content .row {
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    
+  }
+
+  .mega-box .mega-content .row:nth-child(1),
+  .mega-box .mega-content .row:nth-child(2) {
+    border-top: 0px;
+  }
+
+  .mega-content .row .mega-links {
+    border-left: 0px;
+    padding-left: 15px;
+  }
+  
+
+  .row .mega-links li {
+    margin: 0;
+    
+  }
+
+  .mega-content .row h2 {
+    font-size: 19px;
+  }
+}
+
+nav input {
+  display: none;
+}
+
+
+
+
+/*-------- HEADER --------*/
+
+.text-title h2 {
+  text-align: center;
+  color: #fff;
+  line-height: 800px;
+  width: 75%;
+  margin: auto;
+  
+}
+
+.site-header {
+  background-image: url(../assets/galeria.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+  
+}
+span {
+  display:inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 45px;
+  font-family: 'Quintessential', cursive;
+}
+
+@media screen and (min-width: 768px) {
+  span {
+    display:inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 55px;
+    font-family: 'Quintessential', cursive;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*-------- CARDS --------*/
+
+.container-gallery {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.card,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6,
+.card-7,
+.card-8,
+.card-9,
+.card-10,
+.card-11,
+.card-12,
+.card-13,
+.card-14,
+.card-15,
+.card-16,
+.card-17,
+.card-18,
+.card-19,
+.card-20,
+.card-21,
+.card-22,
+.card-23,
+.card-24,
+.card-25,
+.card-26,
+.card-27,
+.card-28,
+.card-29,
+.card-30 {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+  background: white;
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  position: relative;
+  transition: all .4s;
+  margin: 35px 15px;
+}
+
+.card img,
+.card-2 img,
+.card-3 img,
+.card-4 img,
+.card-5 img,
+.card-6 img,
+.card-7 img,
+.card-8 img,
+.card-9 img,
+.card-10 img,
+.card-11 img,
+.card-12 img,
+.card-13 img,
+.card-14 img,
+.card-15 img,
+.card-16 img,
+.card-17 img,
+.card-18 img,
+.card-19 img,
+.card-20 img,
+.card-21 img,
+.card-22 img,
+.card-23 img,
+.card-24 img,
+.card-25 img,
+.card-26 img,
+.card-27 img,
+.card-28 img,
+.card-29 img,
+.card-30 img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+  cursor: pointer;
+  z-index: 10;
+  transition: all .4s;
+}
+
+.card:hover img,
+.card-2:hover img,
+.card-3:hover img,
+.card-4:hover img,
+.card-5:hover img,
+.card-6:hover img,
+.card-7:hover img,
+.card-8:hover img,
+.card-9:hover img,
+.card-10:hover img,
+.card-11:hover img,
+.card-12:hover img,
+.card-13:hover img,
+.card-14:hover img,
+.card-15:hover img,
+.card-16:hover img,
+.card-17:hover img,
+.card-18:hover img,
+.card-19:hover img,
+.card-20:hover img,
+.card-21:hover img,
+.card-22:hover img,
+.card-23:hover img,
+.card-24:hover img,
+.card-25:hover img,
+.card-26:hover img,
+.card-27:hover img,
+.card-28:hover img,
+.card-29:hover img,
+.card-30:hover img {
+  margin-top: -40px;
+}
+
+.card:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover,
+.card-5:hover,
+.card-6:hover,
+.card-7:hover,
+.card-8:hover,
+.card-9:hover,
+.card-10:hover,
+.card-11:hover,
+.card-12:hover,
+.card-13:hover,
+.card-14:hover,
+.card-15:hover,
+.card-16:hover,
+.card-17:hover,
+.card-18:hover,
+.card-19:hover,
+.card-20:hover,
+.card-21:hover,
+.card-22:hover,
+.card-23:hover,
+.card-24:hover,
+.card-25:hover,
+.card-26:hover,
+.card-27:hover,
+.card-28:hover,
+.card-29:hover,
+.card-30:hover {
+  width: 250px;
+}
+
+.card::before {
+  content: 'Arce Japones';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-2::before {
+  content: 'Bonsái Shohin';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-3::before {
+  content: 'Bonsái Chumono';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-4::before {
+  content: 'Bonsái Bunjin';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-5::before {
+  content: 'Bonsái Chokkan';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-6::before {
+  content: 'Bonsái Omono';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-7::before {
+  content: 'Acer Buergerianum';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-8::before {
+  content: 'Acer Palmatu';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-9::before {
+  content: 'Acer Palmatum';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-10::before {
+  content: 'Diospyros Virginiana';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-11::before {
+  content: 'Chaenomeles';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-12::before {
+  content: 'Crataegus';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-13::before {
+  content: 'Fagus Crenata';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-14::before {
+  content: 'Fagus Sylvatica';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-15::before {
+  content: 'Goyo Matsu';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-16::before {
+  content: 'Ginkgo Biloba';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-17::before {
+  content: 'Iwashide';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-18::before {
+  content: 'Himeringo';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-19::before {
+  content: 'Karin';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-20::before {
+  content: 'Juniperus';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-21::before {
+  content: 'Pseudocydonia';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-22::before {
+  content: 'Keyaki';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-23::before {
+  content: 'Pinus';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-24::before {
+  content: 'Tsuyamahinoki';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-25::before {
+  content: 'Rhus succedanea';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-26::before {
+  content: 'Shishigashira';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-27::before {
+  content: 'Yamatsubaki';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-28::before {
+  content: 'Zelkova Serrata';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-29::before {
+  content: 'Shakan';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.card-30::before {
+  content: 'Yose Ue';
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------- FOOTER --------*/
+
+.footer-content{
+    width: 100%;
+    background-color: #191919;
+    overflow: hidden;
+  }
+  
+  
+  .developed {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0px;
+    height: 80px;
+  }
+  
+  .developed a {
+    text-decoration: none;
+    cursor: text;
+  }
+  
+  .logo-gonzalo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .logo-gonzalo p {
+    color: #056612;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+  
+  }
+  
+  @media screen and (max-width: 568px) {
+    .logo-gonzalo {
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+    }
+  
+    .footer-content{
+      height: 160px;
+    }
+  
+    .logo-gonzalo img {
+      padding-top: 20px;
+    }
+  
+    .logo-gonzalo p {
+      padding-top: 20px; 
+    }
+  }
